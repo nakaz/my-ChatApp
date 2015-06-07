@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather|Inconsolata);
+
+.end {
+  color: #7586D6;
+}
+
+.username {
+  color: #AF6CD4;
+}
+
+.nameAfter {
+  color: #1EBA73;
+  margin: 0px 10px 0px 0px;
+  font-family: courier;
+}
+
+.front, .frontU{
+  font-family: courier;
+}
+
+.front {
+  color: #3149B8;
+}
+
+.frontU{
+  color: #AF6CD4;
+}
+
+.niceBtn {
+  background: #1EBA73;
+  font-family: courier;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  border: none;
+  height: 2.2em;
+}
+
+.niceBtn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.fancy, .fancyLog {
+  background: #222;
+  padding: 5px;
+  border: none;
+  height: 1.4em;
+  color: #fff
+}
+
+.fancy{
+  width: 30em;
+  background: #222;
+}
