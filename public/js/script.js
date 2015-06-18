@@ -59,7 +59,7 @@ $.fn.login = function () {
     var name = $('#name').val();
     function newRequest(){
       $.ajax({
-        url: 'http://localhost:8080/' + room,
+        url: 'http://localhost:8080/chatrooms/' + room,
         type: 'GET',
         data: JSON.stringify(),
         contentType: 'application/json; charset=utf-8',
@@ -120,7 +120,7 @@ $.fn.enterRoom = function (){
     var msg = $('#msg').val();
     var newMsg = {name: name, message: msg};
     $.ajax({
-      url: 'http://localhost:8080/' + room,
+      url: 'http://localhost:8080/chatrooms/' + room,
       type: 'POST',
       data: JSON.stringify(newMsg),
       contentType: 'application/json; charset=utf-8',
