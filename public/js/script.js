@@ -78,7 +78,7 @@ $.fn.login = function () {
           $('#submitLogin').hide();
 
           if (store.length < data.length){
-        $('#chatRoom').animate({scrollTop: $('#chatRoom')[0].scrollHeight});
+          // $('#chatRoom').animate({scrollTop: $('#chatRoom')[0].scrollHeight});
           }
 
           store = data;

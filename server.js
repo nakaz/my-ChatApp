@@ -17,13 +17,13 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.json());
 
-app.get('/chatrooms', function (req, res){
-  res.render('index');
-});
-
 // Require the chatroom and user routes
 app.use('/chatrooms', require('./app/routes/chatrooms.js'));
 app.use('/users', require('./app/routes/users.js'));
+
+app.get('/', function (req, res){
+  res.render('index');
+});
 
 var server = app.listen(config.port, displayServerInfo);
 
